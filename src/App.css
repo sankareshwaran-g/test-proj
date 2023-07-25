@@ -1,0 +1,66 @@
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.heroSection {
+  background-image: url(./assets/images/garden.jpg) ;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  /* aspect-ratio: 21/10; */
+
+}
+.card{
+  background-color: #009D94 !important;  
+  opacity: 75% !important;
+  width: 40%;    
+  height: 100%;
+  padding: 30% 0 1% 0; 
+}
+h2{
+  color: rgb(255, 255, 255); 
+  opacity: 100% !important;  
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .heroSection {
+    background-size: fill;
+    background-position: center center;
+    height: 100vh;
+  }
+  .card{
+    width: 50%;    
+    padding: 60% 0 1% 0; 
+  }
+  h2{
+    font-size: 24px !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .heroSection {
+    height: 100vh;
+    background-size: fill;
+    background-position: center center;
+
+    /* aspect-ratio: 16/9; */
+  }
+  .card{
+    width: 50%;    
+    padding: 40% 0 2% 0; 
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .heroSection {
+    height: 100vh;
+    background-size: fill;
+    background-position: center center;
+    /* aspect-ratio: 16/9; */
+  }
+  .card{
+    width: 50%;    
+    padding: 60% 0 2% 0; 
+  }
+}
